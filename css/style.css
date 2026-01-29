@@ -40,6 +40,20 @@ header a {
     text-decoration:underline;
 }
 
+.logo-short {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .logo-full {
+        display: none;
+    }
+
+    .logo-short {
+        display: inline;
+    }
+}
+
 header .wrapper{
     display: flex;
     justify-content: space-between;
