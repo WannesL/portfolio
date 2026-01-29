@@ -1,0 +1,375 @@
+:root {
+    --accent-color: #f97316;
+    --text-color : #222;
+    --bg-color: #f9f9f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color); 
+    color: var(--text-color);    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.navlink {
+ text-decoration: none;
+ color: var(--accent-color);
+ font-weight: 600;
+ font-size: 1.2rem;
+}
+
+.navlink:hover{
+    text-decoration:underline;
+}
+
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+nav a:hover{
+    color: var(--accent-color);
+}
+
+.hero {
+    padding: 5rem 0;
+}
+
+.hero h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-layout {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    max-width: 500px;
+}
+
+.hero-image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--accent-color);
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 600px;
+}
+
+.hero .wrapper {
+    padding-left: 2rem;
+}
+
+.intro {
+    padding: 4rem 0;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    max-width: 700px;
+    font-size: 1rem;
+}
+
+.intro h2::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: var(--accent-color);
+    margin-bottom: 0.75rem;
+}
+
+footer {
+    background-color: white;
+    border-top: 1px solid #e5e5e5;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card{
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.project-image {
+    height: 400px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-content p {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.tech-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.tech-list li {
+    background-color: rgba(249, 115, 22, 0.1);
+    color: var(--accent-color);
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--accent-color);
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+.hobbies {
+    padding: 4rem 0;
+}
+
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.hobby-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.hobby-card:hover {
+    transform: translateY(-4px);
+}
+
+.hobby-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.mindset-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.mindset-list li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.mindset-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about {
+    padding: 4rem 0;
+}
+
+.about-content p {
+    font-size: 0.95rem;
+    color: #444;
+    padding: 1.5rem;
+    font-size: 1.25rem;
+}
+
+
+.about .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 4rem 0;
+}
+
+.about-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    height: 280px;
+    cursor: pointer;
+}
+
+.about-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.about-card:hover img {
+    transform: scale(1.1);
+}
+
+.about-card-content {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.about-card-content h3 {
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.about-card:hover .about-card-content {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .hero-layout {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+
